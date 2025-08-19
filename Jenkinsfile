@@ -1,4 +1,4 @@
-@Library('Shared')_
+@Library('library_name')_
 pipeline{
     agent { label 'vinod'}
     
