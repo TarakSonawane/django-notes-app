@@ -11,7 +11,7 @@ pipeline{
         }
         stage("Code Build"){
             steps{
-            dockerbuild("notes-app","latest","tarak13)
+            dockerbuild("notes-app","latest","tarak13")
             }
         }
         stage("Push to DockerHub"){
