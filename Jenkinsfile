@@ -11,12 +11,12 @@ pipeline{
         }
         stage("Code Build"){
             steps{
-            dockerbuild("notes-app","latest","tarak13")
+            docker_build("notes-app","latest","tarak13")
             }
         }
         stage("Push to DockerHub"){
             steps{
-                dockerpush("dockerHubCreds","notes-app")
+                docker_push("DockerHubID","notes-app")
             }
         }
         stage("Deploy"){
